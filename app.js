@@ -10,7 +10,8 @@ function combining(num1, num2, resultConversion) {
         return +result;
     }
     else {
-        return result.toString;
+        return result.toString();
     }
 }
 console.log(combining(1, 2, "as-number"));
+console.log(combining('max', 'anna', 'as-text'));

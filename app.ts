@@ -8,7 +8,7 @@ function combining (num1:number | string, num2:number | string, resultConversion
    if (resultConversion == "as-number") {
        return +result;
    } else {
-       return result.toString
+       return result.toString()
    }
     
 }
@@ -16,3 +16,4 @@ function combining (num1:number | string, num2:number | string, resultConversion
 
 
 console.log(combining(1,2,"as-number"))
+console.log(combining('max','anna','as-text'))
