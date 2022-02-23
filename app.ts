@@ -1,14 +1,18 @@
-function combine (num1:number | string, num2:number | string) {
+function combining (num1:number | string, num2:number | string, resultConversion: string) {
     let result;
    if (typeof num1 == 'number' && typeof num2 == 'number') {
        result = num1 + num2
    } else {
        result = num1.toString() + num2.toString()
    }
-    return result;
+   if (resultConversion == "as-number") {
+       return +result;
+   } else {
+       return result.toString
+   }
+    
 }
 
-const num1 = 200
-const num2 = 432
 
-console.log(combine(num1,num2))
+
+console.log(combining(1,2,"as-number"))
